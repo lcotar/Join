@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link rel="icon" href="./assets/img/icon/join_logo.svg" />
+    <link rel="icon" href="./assets/img/icon/join_logo.svg" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+
+    <link rel="stylesheet" href="./style/add-task.css" />
+    <link rel="stylesheet" href="./style/add-task-btn.css" />
+    <link rel="stylesheet" href="./style/add-task-img.css" />
+    <link rel="stylesheet" href="./style/add-task-responsiv.css" />
+    <script src="./scripts/add-task.js"></script>
+    <script src="./scripts/render-add-task.js"></script>
+    <script src="./scripts/add-task-html.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/contacts.js"></script>
+    <script src="./scripts/user.js"></script>
+    <script src="./scripts/include.js"></script>
+    <script src="./scripts/init.js"></script>
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <title>Add Task</title>
+  </head>
+
+  <body onload="includeHTML(); initAddTask()">
+    <div
+      id="slide-out"
+      class="slide-out"
+      w3-include-html="./tpl/flyout.html"
+    ></div>
+    <div class="body">
+      <section class="sidebar" w3-include-html="./tpl/sidebar.html"></section>
+
+      <section class="right-section">
+        <header w3-include-html="./tpl/top.html"></header>
+
+        <section class="content">
+          <section>
+            <div onload="renderInitials();">
+              <h1 class="titleTask">Add Task</h1>
+
+              <form
+                action=""
+                id="myForm"
+                onsubmit="createTask(); return false;"
+              >
+                <!--renderAddTask()-->
+              </form>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

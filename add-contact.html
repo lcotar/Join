@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./style/contacts.css" />
+    <script src="./scripts/contacts.js"></script>
+    <script src="./scripts/global.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/user.js"></script>
+  </head>
+  <body>
+    <div class="add-contact-main-container">
+      <div class="add-contact-container">
+        <div class="add-contact-left-section">
+          <div class="add-contact-left-section-container">
+            <img
+              class="add-contact-left-section-container-logo"
+              src="./assets/img/icon/join_logo_white.svg"
+              alt=""
+            />
+            <div class="contact-heading">Add contact</div>
+            <div class="contact-heading-2">Tasks are better with a team!</div>
+          </div>
+        </div>
+        <div class="add-contact-right-section">
+          <img
+            class="contact-default-svg"
+            src="./assets/img/icon/contact_default.svg"
+            alt=""
+          />
+          <div class="add-contact-right-section-2">
+            <div class="close-svg-container">
+              <button onclick="closeModalAdd()">
+                <img class="close-svg" src="./assets/img/icon/close.svg" alt="">
+              </button>
+            </div>
+            <form class="contact-data" onsubmit="pushAllData(getInput()); return false">
+              <div class="input-fields">
+                <input
+                id="name-input"
+                  class="log-in-input"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <img
+                  class="input-icon"
+                  src="./assets/img/icon/person.svg"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="input-fields">
+                <input
+                id="email-input"
+                  class="log-in-input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <img
+                  class="input-icon"
+                  src="./assets/img/icon/mail.svg"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="input-fields">
+                <input
+                id="phone-input"
+                  class="log-in-input"
+                  type="number"
+                  placeholder="Phone"
+                  required
+                />
+                <img
+                  class="input-icon"
+                  src="./assets/img/icon/phone.svg"
+                  alt="Icon"
+                />
+              </div>
+              <section class="add-contact-btns">
+                <button class="btn-bright btn" style="font-size: 21px" onclick="clearInput()" type="button">
+                    <div>Cancel</div>
+                    <img src="./assets/img/icon/close.svg" alt="">
+                  </button>
+              <button class="btn-dark btn" style="font-size: 21px" type="submit">
+                <div>Create contact</div>
+                <img src="./assets/img/icon/check.svg" alt="">
+              </button>
+            </section>
+            </form>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

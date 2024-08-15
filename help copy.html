@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Help</title>
+    <script src="./scripts/include.js"></script>
+    <script src="./scripts/global.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/user.js"></script>
+    <script src="./scripts/init.js"></script>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/fonts.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload="includeHTML(); renderContent()">
+    <div id="slide-out" class="slide-out" w3-include-html="./tpl/flyout.html"></div>
+    <div class="body">
+        <section class="sidebar" w3-include-html="./tpl/sidebar.html"></section>
+        <section class="right-section">
+            <header w3-include-html="./tpl/top.html"></header>
+            <section class="content">
+                <h2>Welcome to <span class="join">Join</span> - Your Project Management Solution</h2>
+
+                <p>Agile project management has become a cornerstone in modern project execution, offering flexibility,
+                    enhanced productivity, and a clear structure to manage complex tasks. One of the most effective
+                    tools in agile project management is the Kanban board. This visual tool helps teams manage workflow
+                    efficiently, ensuring that tasks move smoothly from one stage to another. With <span
+                        class="join">Join</span>, you can harness the power of Kanban to streamline your project
+                    management processes, collaborate effectively, and meet your deadlines with ease.</p>
+
+                <h3 class="help">Understanding the Kanban Board</h3>
+
+                <p>The Kanban board is designed to visualize the work process and improve task management. It consists
+                    of different columns representing various stages of work. Typically, these columns include:</p>
+
+                <ul>
+                    <li><b>To-Do:</b> Tasks that need to be started.</li>
+                    <li><b>In Progress:</b> Tasks currently being worked on.</li>
+                    <li><b>Await Feedback:</b> Tasks that require input or approval from others.</li>
+                    <li><b>Done:</b> Completed tasks.</li>
+                </ul>
+
+                <p>By moving tasks across these columns, teams can easily track progress, identify bottlenecks, and
+                    ensure a smooth workflow. <span class="join">Join</span> offers an intuitive Kanban board that makes
+                    task management seamless and effective.</p>
+
+                <h3 class="help">Creating and Assigning Tasks</h3>
+
+                <p>With <span class="join">Join</span>, you can easily create tasks and assign them to team members.
+                    Here's how you can do it:</p>
+
+                <ul>
+                    <li><b>Create a Task:</b> Click on the "Add Task" button to create a new task. Enter the task
+                        details such as title, description, and category.</li>
+                    <li><b>Assign to Users:</b> Assign the task to one or more team members. This ensures that everyone
+                        knows their responsibilities.</li>
+                    <li><b>Set a Deadline:</b> Specify a deadline for the task to ensure timely completion.</li>
+                    <li><b>Categorize Tasks:</b> Organize tasks by categories to streamline your workflow and make it
+                        easier to find specific tasks.</li>
+                </ul>
+
+                <h3 class="help">Managing Subtasks</h3>
+
+                <p>For larger tasks that require multiple steps, <span class="join">Join</span> allows you to create
+                    subtasks. This helps in breaking down complex tasks into manageable pieces, ensuring that every
+                    aspect of the task is covered. To add subtasks:</p>
+
+                <ul>
+                    <li><b>Add Subtasks:</b> Within a task, click on "Add Subtask" and fill in the details.</li>
+                    <li><b>Track Progress:</b> Subtasks can be individually tracked, providing a clear view of the
+                        overall task progress.</li>
+                </ul>
+
+                <h3 class="help">Keeping an Eye on Deadlines</h3>
+
+                <p>Deadlines are crucial in project management. <span class="join">Join</span> helps you stay on top of
+                    your deadlines by highlighting the next upcoming deadline on the summary page. This ensures that you
+                    never miss an important due date and can prioritize your tasks accordingly.</p>
+
+                <h3 class="help">Summary Page - Your Project at a Glance</h3>
+
+                <p>The summary page in <span class="join">Join</span> provides an overview of all current tasks and
+                    their statuses. It includes:</p>
+
+                <ul>
+                    <li><b>Current Tasks:</b> A list of tasks currently in progress, along with their details and
+                        assignees.</li>
+                    <li><b>Upcoming Deadlines:</b> Information about the next task deadlines, helping you to plan and
+                        prioritize your work effectively.</li>
+                </ul>
+
+                <p>This comprehensive view ensures that you and your team are always aware of the project's status and
+                    can make informed decisions.</p>
+
+                <h3>Benefits of Using <span class="join">Join</span></h3>
+
+                <p><span class="join">Join</span> offers numerous benefits that enhance your project management
+                    experience:</p>
+
+                <ul>
+                    <li><b>Improved Collaboration:</b> With tasks assigned and tracked, team members can collaborate
+                        more effectively, knowing exactly what needs to be done.</li>
+                    <li><b>Enhanced Visibility:</b> The Kanban board provides a clear visual representation of the
+                        project's progress, making it easy to identify and address bottlenecks.</li>
+                    <li><b>Efficient Task Management:</b> Organize and prioritize tasks effortlessly, ensuring that
+                        nothing falls through the cracks.</li>
+                    <li><b>Timely Updates:</b> Stay informed about upcoming deadlines and task statuses with the summary
+                        page.</li>
+                    <li><b>Customizable Workflow:</b> Tailor the Kanban board to fit your specific project needs, adding
+                        columns and categories as required.</li>
+                </ul>
+
+                <h3 class="help">Getting Started with <span class="join">Join</span></h3>
+
+                <p>To start using <span class="join">Join</span>, simply sign up for an account, create your first
+                    project, and set up your Kanban board. Invite team members, assign tasks, and begin managing your
+                    project with ease. <span class="join">Join</span> is designed to be user-friendly, making it simple
+                    for everyone on your team to get onboard and start contributing immediately.</p>
+
+                <h3 class="help">Conclusion</h3>
+
+                <p><span class="join">Join</span> is a powerful project management tool that leverages the efficiency of
+                    a Kanban board to help teams manage tasks, collaborate effectively, and meet deadlines. Whether
+                    you're working on a small project or a large initiative, <span class="join">Join</span> provides the
+                    features and flexibility you need to stay organized and productive. Embrace the power of agile
+                    project management with <span class="join">Join</span> and see the difference it can make in your
+                    team's workflow and success.</p>
+
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Log-in</title>
+
+    <link rel="stylesheet" href="./style/login-signup.css">    
+    <script src="./scripts/global.js"></script>
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/signup.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/user.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/img/icon/join_logo.svg" />
+</head>
+
+<body>
+
+    <div class="white-background"></div>
+
+    <section class="upper-section">
+        <!-- LOGO -->
+        <div class="join-logo">
+            <img src="./assets/img/icon/join_logo.svg" alt="JOIN-LOGO">
+        </div>
+
+        <section class="sign-up-section sign-up-1">
+            <div>Not a Join user?</div>
+            <a href="signup.html"><button class="btn-dark btn" id="btn-sign-up" style="font-size: 16px;">Sign up</button></a>
+        </section>
+    </section>
+
+    <main>
+        <section class="log-in-section login-part">
+            <div class="log-in-headline">
+                <p>Log in</p>
+
+                <div class="underline"></div>
+            </div>
+
+            <form class="mail-and-password" onsubmit="logIn(); return false;">
+                <div class="input-fields">
+                    <input id="logInEmail" class="log-in-input" type="email" placeholder="Email" required>
+                    <img class="input-icon" src="./assets/img/icon/mail.svg" alt="Icon">
+                </div>
+
+                <div class="input-fields">
+                    <input id="logInPassword" class="log-in-input" type="password" placeholder="Password" required>
+                    <img class="input-icon" src="./assets/img/icon/lock.svg" alt="Icon">
+                </div>
+                
+                <div id="wrongPassword" class="notification">
+                </div>
+
+                <label class="checkbox"><input id="rememberMe" type="checkbox"><span>Remember me</span></label>
+
+                <section class="log-in-btns">
+                    <button id="logInBtn" class="btn-dark btn" style="font-size: 21px;">Log in</button>
+                    <a href="summary.html" class="btn-bright btn" style="font-size: 21px;" onclick="setGuestUser()">Guest Log in</a>
+                </section>
+            </form>
+
+        </section>
+
+        <section class="sign-up-section sign-up-2">
+            <div class="d-none">
+                <div>Not a Join user?</div>
+                <a href="signup.html" class="btn-dark btn" style="width: 120px;">Sign up</a>
+            </div>
+        </section>
+    </main>
+
+    <section class="bottom">
+        <a href="no-login-privacy.html"><span class="bottom-links">Privacy Policy</span></a>
+        <a href="no-login-legal.html"><span class="bottom-links">Legal notice</span></a>
+    </section>
+</body>
+
+</html>

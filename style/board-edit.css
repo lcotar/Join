@@ -1,0 +1,300 @@
+
+
+.title-input textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical; 
+    overflow: auto; 
+    border-radius:0px;
+  }
+  
+  .edit-task-2-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  
+  .small {
+    width: 50%;
+  }
+  
+  .edit-form-header {
+    display:flex;
+    justify-content: flex-end;
+  }
+  
+  .right {
+    justify-content:flex-end !important;
+  }
+  
+  .subtask-preview, .subtask-edit {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:5px;
+    margin-right:10px;
+  }
+  
+  .edit-icons {
+    width: 10%;
+    display:flex;
+    margin-right:10px;
+  }
+  
+  .edit-icons img{
+  width: 100px;
+  }
+  
+  .description-preview {
+    flex:1;
+    width:250px;  
+  }
+  
+  .class-done {
+    width:10%;
+  }
+  
+  .subtask-description {
+    display:flex;
+    justify-content: space-between;
+    width:85%;    
+  }
+  
+  .subtask-description input[type="checkbox"] {
+  width: 20px;
+  }
+  
+  .subtask-description input[type="text"] {
+    width: 290px;
+    height: 28px;
+    flex:1;
+  
+  }
+  
+  .add-new-subtask {
+    display:flex;
+    align-items: center;
+    border: 1px lightgray solid;
+    border-radius:10px;
+  }
+  
+  .add-task-input {
+  border: none !important;
+  }
+  
+  .save-edited-task {
+    text-align:center ;
+    margin:10px;
+  }
+  
+  .btn-small {
+    font-size: 14px !important;    
+    height:30px !important;
+  }
+  
+  .blur {
+  background: none !important;
+  }
+  
+  #priority {
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .btn-prio {
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: 30%;
+    cursor:pointer;
+    border: 1px lightgray solid;
+    border-radius:10px;
+    margin: 15px 0;
+    font-size: 12px;
+  }
+  
+  .green {
+    background-color:#7AE229;
+  }
+  
+  .yellow {
+    background-color:#FFA800;    
+  }
+  
+  .red {
+    background-color:#FF0000;
+  }
+  
+  .green, .yellow, .red {
+    color:white;
+  }
+  
+  .add-task-input:focus {
+    outline: none;
+  }
+  
+  #task-title:focus,
+  #task-description:focus {
+    outline: none;
+  }
+  
+  div#subtask-list {
+    
+    margin-top: 18px;
+  }
+  
+  .preview-card-content {
+    padding: 0px 20px;
+  } 
+ 
+  .title-edit-card {
+    font-size:1.3rem;
+    font-weight:normal !important;
+    margin-bottom: 5px;
+    margin-top:0px;
+  }
+  
+  .btn-add-new-subtask {
+    margin-right:10px;
+    width:20px;
+  }
+  
+  @keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+      10% {
+          transform: rotate(1deg);
+      }
+  
+      20%,
+      40%,
+      60% {
+          transform: rotate(-2deg);
+      }
+  
+      30%,
+      50%,
+      70% {
+          transform: rotate(2deg);
+      }
+  
+      80% {
+          transform: rotate(-1deg);
+      }
+  
+      90% {
+          transform: rotate(1deg);
+      }
+  }
+  
+  .shake {
+    animation: shake 1s;
+    animation-iteration-count: 1sec;
+  }
+  
+  .card-shadow {
+    box-shadow: 3px 4px 19px -1px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 3px 4px 19px -1px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 3px 4px 19px -1px rgba(0, 0, 0, 0.43);
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  ::-moz-scrollbar-button:decrement,
+  ::-moz-scrollbar-button:increment,
+  ::-webkit-scrollbar-button:decrement,
+  ::-webkit-scrollbar-button:increment {
+    width: 0px;
+  }
+  
+  
+  
+  @media (max-width:1100px) {
+      #kb-task-done {
+          margin-bottom:120px;
+      }
+  
+      .kanban-col-hl {
+          justify-content: flex-start;
+          gap:30px;
+          width:90vw;
+      }
+  
+    .kanban-board {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+      .kanban-tasks {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;                
+          width:90vw;
+          padding:20px 2px;
+          margin-right:100px;       
+          overflow-x:auto;
+          min-height: 100px;
+      }
+  
+      .right-section {
+          overflow-x: hidden;
+          
+      }
+  
+      .task-info {
+          min-width:200px;
+          max-width:200px;
+      }
+  
+      .no-task-info {
+          width:200px;
+      }
+  
+    .board-header {
+      flex-direction: column;
+    }
+  
+      .btn-add-task {
+          min-width:120px;
+          font-size:medium;
+      }
+      .progress {
+          flex-direction: column;
+      }
+  }
+  
+  @media (max-width:580px) {
+      .board-functions {
+          flex-direction: column;
+          gap:10px;
+          align-items: center;
+      }
+
+      .dropdown-contacts {
+        width:95%;
+      }
+      
+      .btn-add-task {
+          height:56px;
+          min-width: 200px;       
+      }
+  
+    .search-task {
+      width: 250px;
+    }
+  
+    input.filter-tasks-field {
+      width: 170px;
+      font-size: 16px;
+    }
+  }
+  
+  

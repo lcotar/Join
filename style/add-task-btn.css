@@ -1,0 +1,270 @@
+.prioBTNS {
+  display: flex; /* Aligns the buttons horizontally */
+  justify-content: space-between;
+  width: 100%; /* Fixed width */
+  height: 56px; /* Fixed height */
+  gap: 16px; /* Space between buttons */
+}
+
+.addTaskBTN {
+  width: 136px;
+  width: 40%;
+  height: 56px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-size: clamp(20px, 1.3vw, 30px);
+  font-weight: 500;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTaskHover:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.37);
+}
+
+.urgents,
+.mediums,
+.lows {
+  font-size: clamp(17px, 1.3vw, 30px);
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #d1d1d1;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.addTaskBTN#high.active {
+  background-color: red;
+  border: red;
+  color: white;
+}
+
+.addTaskBTN#medium.active {
+  background-color: #ffa800;
+  border: #ffa800;
+  color: white;
+}
+
+.addTaskBTN#low.active {
+  background-color: #7ae229;
+  border: #7ae229;
+  color: white;
+}
+
+/* BTN Footer */
+.BTNFooter {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 90%;
+  height: 56px;
+  gap: 16px;
+  right: 385px;
+}
+
+.clearBTNFooter {
+  display: flex;
+  justify-content: space-between;
+  right: 10px;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 100px;
+  box-sizing: border-box;
+  align-items: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.clearBTNFooter:hover {
+  cursor: pointer;
+  color: #29abe2;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
+  border: 1px solid #29abe2;
+  outline: none;
+}
+
+.clearBTNFooter:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.creatingBTNFooter {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 25.2px;
+  text-align: left;
+  border: 1px solid #d1d1d1;
+  background: #2a3647;
+  color: white;
+  box-sizing: border-box;
+  align-items: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.creatingBTNFooter:hover {
+  background: #29abe2;
+  cursor: pointer;
+  color: white;
+  border: transparent;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.37);
+}
+
+@media screen and (max-width: 1100px) {
+  .BTNFooter {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    height: 56px;
+    gap: 16px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .BTNFooter {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    height: 56px;
+    gap: 16px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BTNFooter {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    height: 56px;
+    gap: 16px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .BTNFooter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    height: 56px;
+    gap: 16px;
+    right: 0;
+    left: 0px;
+    bottom: 50px;
+  }
+
+  .clearBTNFooter {
+    display: flex;
+    justify-content: space-between;
+    right: 10px;
+    padding: 16px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .BTNFooter {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 90%;
+    height: 56px;
+    gap: 16px;
+    right: 0;
+    left: 0px;
+    bottom: 50px;
+  }
+
+  .prioBTNS {
+    display: flex; /* Aligns the buttons horizontally */
+    flex-direction: column;
+    width: 100%; /* Fixed width */
+    height: 56px; /* Fixed height */
+    gap: 16px; /* Space between buttons */
+  }
+
+  .urgents,
+  .mediums,
+  .lows {
+    font-size: clamp(17px, 1.3vw, 30px);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .clearBTNFooter {
+    display: flex;
+    justify-content: space-between;
+    right: 10px;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .creatingBTNFooter {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    padding: 16px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 25.2px;
+    text-align: left;
+    border: 1px solid #d1d1d1;
+    background: #2a3647;
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+    width: auto;
+    white-space: nowrap;
+  }
+}
