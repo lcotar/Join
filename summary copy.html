@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Template</title>
+    <script src="./scripts/include.js"></script>    
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/summary.js"></script>
+    <script src="./scripts/global.js"></script>
+    <script src="./scripts/init.js"></script>
+    <script src="./scripts/render.js"></script>    
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/user.js"></script>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/summary.css">
+    <link rel="stylesheet" href="./style/fonts.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload="onload()">
+    <div id="slide-out" class="slide-out" w3-include-html="./tpl/flyout.html"></div>
+    <div class="body">
+        <section class="sidebar" w3-include-html="./tpl/sidebar.html"></section>
+        <section class="right-section">
+            <header w3-include-html="./tpl/top.html"></header>
+            <section class="content">
+
+                <div class="summary-header">
+                    <h1>Join 360</h1>
+                    <div class="summary-head-divider"></div>
+                    <span class="join-slogan">Key Metrics at a Glance</span>
+                </div>
+
+                <section class="summary-content">
+                    <div class="summary-content-left">
+                        <div class="task-overview-area">
+                            <div class="tasks-open-and-done task-overview-card">
+                                <img src="./assets/img/pencil.svg" alt="To Do">
+                                <div class="counter-area">
+                                    <span class="numbers-counted" id="sum-tasks-open"></span>
+                                    <span class="counted-subtext">To-Do</span>
+                                </div>
+                            </div>
+                            <div class="tasks-open-and-done task-overview-card">
+                                <img src="./assets/img/done.svg" alt="To Do">
+                                <div class="counter-area">
+                                    <span class="numbers-counted" id="sum-tasks-done"></span>
+                                    <span class="counted-subtext">Done</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="urgency-overview task-overview-card">
+                            <div class="urgency-summary">
+                                <img src="./assets/img/urgent-circle.svg" alt="Urgent">
+                                <div class="urgency-counter">
+                                    <span class="numbers-counted" id="sum-tasks-urgent"></span>
+                                    <span class="counted-subtext">Urgent</span>
+                                </div>
+                            </div>
+                            <div class="urgency-area-divider"></div>
+                            <div class="deadline">
+                                <span id="next-deadline"></span>
+                                <span class="upcoming-deadline">Upcoming Deadline</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-content-footer">
+                            <div class="summary-small task-overview-card">
+                                <span class="numbers-counted" id="sum-tasks-total"></span>
+                                <span class="counted-subtext">Tasks in Board</span>
+                            </div>
+                            <div class="summary-small task-overview-card">
+                                <span class="numbers-counted" id="sum-tasks-in-progress"></span>
+                                <span class="counted-subtext">Tasks in Progress</span>
+                            </div>
+                            <div class="summary-small task-overview-card">
+                                <span class="numbers-counted" id="sum-tasks-await-feedback"></span>
+                                <span class="counted-subtext">Awaiting Feedback</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="greeting">
+                        <span id="greeting-depends-on-time">Good morning</span>
+                        <span id="greeted-person"></span>
+                    </div>
+                </section>
+
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>
